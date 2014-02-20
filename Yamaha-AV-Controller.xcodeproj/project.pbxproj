@@ -1,0 +1,258 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A783F518B6623400D81234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A783F418B6623400D81234 /* Foundation.framework */; };
+		09A783F818B6623400D81234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A783F718B6623400D81234 /* main.m */; };
+		09A783FC18B6623400D81234 /* Yamaha_AV_Controller.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09A783FB18B6623400D81234 /* Yamaha_AV_Controller.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09A783EF18B6623400D81234 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				09A783FC18B6623400D81234 /* Yamaha_AV_Controller.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09A783F118B6623400D81234 /* Yamaha-AV-Controller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Yamaha-AV-Controller"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A783F418B6623400D81234 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09A783F718B6623400D81234 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09A783FA18B6623400D81234 /* Yamaha-AV-Controller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yamaha-AV-Controller-Prefix.pch"; sourceTree = "<group>"; };
+		09A783FB18B6623400D81234 /* Yamaha_AV_Controller.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Yamaha_AV_Controller.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09A783EE18B6623400D81234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A783F518B6623400D81234 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09A783E818B6623400D81234 = {
+			isa = PBXGroup;
+			children = (
+				09A783F618B6623400D81234 /* Yamaha-AV-Controller */,
+				09A783F318B6623400D81234 /* Frameworks */,
+				09A783F218B6623400D81234 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09A783F218B6623400D81234 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09A783F118B6623400D81234 /* Yamaha-AV-Controller */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09A783F318B6623400D81234 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09A783F418B6623400D81234 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09A783F618B6623400D81234 /* Yamaha-AV-Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09A783F718B6623400D81234 /* main.m */,
+				09A783FB18B6623400D81234 /* Yamaha_AV_Controller.1 */,
+				09A783F918B6623400D81234 /* Supporting Files */,
+			);
+			path = "Yamaha-AV-Controller";
+			sourceTree = "<group>";
+		};
+		09A783F918B6623400D81234 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09A783FA18B6623400D81234 /* Yamaha-AV-Controller-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09A783F018B6623400D81234 /* Yamaha-AV-Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09A783FF18B6623400D81234 /* Build configuration list for PBXNativeTarget "Yamaha-AV-Controller" */;
+			buildPhases = (
+				09A783ED18B6623400D81234 /* Sources */,
+				09A783EE18B6623400D81234 /* Frameworks */,
+				09A783EF18B6623400D81234 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yamaha-AV-Controller";
+			productName = "Yamaha-AV-Controller";
+			productReference = 09A783F118B6623400D81234 /* Yamaha-AV-Controller */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09A783E918B6623400D81234 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Mads Y";
+			};
+			buildConfigurationList = 09A783EC18B6623400D81234 /* Build configuration list for PBXProject "Yamaha-AV-Controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 09A783E818B6623400D81234;
+			productRefGroup = 09A783F218B6623400D81234 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09A783F018B6623400D81234 /* Yamaha-AV-Controller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09A783ED18B6623400D81234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A783F818B6623400D81234 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		09A783FD18B6623400D81234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		09A783FE18B6623400D81234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		09A7840018B6623400D81234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yamaha-AV-Controller/Yamaha-AV-Controller-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09A7840118B6623400D81234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yamaha-AV-Controller/Yamaha-AV-Controller-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09A783EC18B6623400D81234 /* Build configuration list for PBXProject "Yamaha-AV-Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A783FD18B6623400D81234 /* Debug */,
+				09A783FE18B6623400D81234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A783FF18B6623400D81234 /* Build configuration list for PBXNativeTarget "Yamaha-AV-Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A7840018B6623400D81234 /* Debug */,
+				09A7840118B6623400D81234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09A783E918B6623400D81234 /* Project object */;
+}
