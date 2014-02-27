@@ -20,7 +20,7 @@ NSOutputStream *outputStream;
 - (void)setup {
 	NSURL *url = [NSURL URLWithString:host];
 	
-	NSLog(@"Setting up connection to %@ : %i", [url absoluteString], port);
+	//NSLog(@"Setting up connection to %@ : %i", [url absoluteString], port);
 	
 	CFStreamCreatePairWithSocketToHost(kCFAllocatorDefault, (__bridge CFStringRef)[url host], port, &readStream, &writeStream);
 	
@@ -31,13 +31,13 @@ NSOutputStream *outputStream;
 	}
 	[self open];
 	
-	NSLog(@"Status of outputStream: %lu", [outputStream streamStatus]);
+	//NSLog(@"Status of outputStream: %lu", [outputStream streamStatus]);
 	
 	return;
 }
 
 - (void)open {
-	NSLog(@"Opening streams.");
+	//NSLog(@"Opening streams.");
 	
 	inputStream = (__bridge NSInputStream *)readStream;
 	outputStream = (__bridge NSOutputStream *)writeStream;
@@ -56,7 +56,7 @@ NSOutputStream *outputStream;
 }
 
 - (void)close {
-	NSLog(@"Closing streams.");
+	//NSLog(@"Closing streams.");
 	
 	[inputStream close];
 	[outputStream close];
@@ -75,18 +75,18 @@ NSOutputStream *outputStream;
 }
 
 - (void)stream:(NSStream *)stream handleEvent:(NSStreamEvent)event {
-	NSLog(@"Stream triggered.");
+	//NSLog(@"Stream triggered.");
 	
 	switch(event) {
 		case NSStreamEventHasSpaceAvailable: {
 			if(stream == outputStream) {
-				NSLog(@"outputStream is ready.");
+				//NSLog(@"outputStream is ready.");
 			}
 			break;
 		}
 		case NSStreamEventHasBytesAvailable: {
 			if(stream == inputStream) {
-				NSLog(@"inputStream is ready.");
+				//NSLog(@"inputStream is ready.");
 				
 				uint8_t buf[1024];
 				NSInteger len = 0;
@@ -108,7 +108,7 @@ NSOutputStream *outputStream;
 			break;
 		}
 		default: {
-			NSLog(@"Stream is sending an Event: %lu", event);
+			//NSLog(@"Stream is sending an Event: %lu", event);
 			
 			break;
 		}
@@ -116,8 +116,8 @@ NSOutputStream *outputStream;
 }
 
 - (void)readIn:(NSString *)s {
-	NSLog(@"Reading in the following:");
-	NSLog(@"%@", s);
+	//NSLog(@"Reading in the following:");
+	//NSLog(@"%@", s);
 }
 
 - (void)writeOut:(NSString *)s {
@@ -125,8 +125,8 @@ NSOutputStream *outputStream;
 	
 	[outputStream write:buf maxLength:strlen((char *)buf)];
 	
-	NSLog(@"Writing out the following:");
-	NSLog(@"%@", s);
+	//NSLog(@"Writing out the following:");
+	//NSLog(@"%@", s);
 }
 
 @end

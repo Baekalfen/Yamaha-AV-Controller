@@ -52,7 +52,7 @@ int main(int argc, const char * argv[])
     else if ([cmd isEqualToString:@"m"] || [cmd isEqualToString:@"mute"]){
         [c writeOut:[NSString stringWithFormat:@"<YAMAHA_AV cmd=\"PUT\"><Main_Zone><Volume><Mute>%@</Mute></Volume></Main_Zone></YAMAHA_AV>",arg]];
     }
-    else if ([cmd isEqualToString:@"s"] || [cmd isEqualToString:@"scene"]){
+    else if ([cmd isEqualToString:@"scn"] || [cmd isEqualToString:@"scene"]){
         [c writeOut:[NSString stringWithFormat:@"<YAMAHA_AV cmd=\"PUT\"><Main_Zone><Scene><Scene_Sel>Scene %@</Scene_Sel></Scene></Main_Zone></YAMAHA_AV>",arg]];
     }
     
