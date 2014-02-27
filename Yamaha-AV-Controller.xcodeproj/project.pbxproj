@@ -10,6 +10,7 @@
 		09A783F518B6623400D81234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A783F418B6623400D81234 /* Foundation.framework */; };
 		09A783F818B6623400D81234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A783F718B6623400D81234 /* main.m */; };
 		09A783FC18B6623400D81234 /* Yamaha_AV_Controller.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09A783FB18B6623400D81234 /* Yamaha_AV_Controller.1 */; };
+		09E6C18C18BFA83D00DAA6B8 /* Communicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E6C18B18BFA83D00DAA6B8 /* Communicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		09A783F718B6623400D81234 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09A783FA18B6623400D81234 /* Yamaha-AV-Controller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yamaha-AV-Controller-Prefix.pch"; sourceTree = "<group>"; };
 		09A783FB18B6623400D81234 /* Yamaha_AV_Controller.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Yamaha_AV_Controller.1; sourceTree = "<group>"; };
+		09E6C18818BFA7AD00DAA6B8 /* Communicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Communicator.h; sourceTree = "<group>"; };
+		09E6C18B18BFA83D00DAA6B8 /* Communicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Communicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				09A783F718B6623400D81234 /* main.m */,
 				09A783FB18B6623400D81234 /* Yamaha_AV_Controller.1 */,
 				09A783F918B6623400D81234 /* Supporting Files */,
+				09E6C18818BFA7AD00DAA6B8 /* Communicator.h */,
+				09E6C18B18BFA83D00DAA6B8 /* Communicator.m */,
 			);
 			path = "Yamaha-AV-Controller";
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E6C18C18BFA83D00DAA6B8 /* Communicator.m in Sources */,
 				09A783F818B6623400D81234 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +257,7 @@
 				09A7840118B6623400D81234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
